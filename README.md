@@ -50,8 +50,8 @@
 		### Response Description
 		
 
-> status: Request status either successful or fail
-> shorten_url: Result of the API shorten URL
-> existing_value: The URL is already exist in db
+> - status: Request status either successful or fail
+> - shorten_url: Result of the API shorten URL
+> - existing_value: The URL is already exist in db
 
  - *If the short URL get fired in browser a request comes to this application we fetch the token from request and pull the database record corresponding to that token and then redirection the user to the main URL mentioned in the record *
