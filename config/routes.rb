@@ -4,9 +4,9 @@ Rails.application.routes.draw do
 
   scope module:  'api' do
     scope module: 'v1' do
+      get '/top_most_url', to: 'shorten_urls#top_most_url'
       get '/*path', to: 'shorten_urls#redirect'
       resources :shorten_urls, only: [:create]
-      post '/top_most_url', to: 'shorten_urls#top_most_url'
     end
   end
 end
